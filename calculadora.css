@@ -1,0 +1,42 @@
+/*Aplicando estilos al elemento body*/
+body {
+
+    background-color: black;
+
+}
+
+/*Aplicando estilos para la tabla, celda y titulo de la tabla*/
+table, caption , th , td{
+
+    color: white;
+    border: 5px solid white;
+    border-collapse: collapse;
+    font-size: 25px;
+
+}
+
+/* Aplicando estilos a los botones */ 
+button{
+
+    width: 75px;
+    height: 75px;
+    font-size: 25px;
+
+}
+
+/*Aplicando estilos a la pantalla con el selector de id*/
+#pantalla{
+
+    width: 320px;
+    height: 70px;
+    font-size: 35px;
+    text-align: right;
+
+}
+
+#contenedor{
+
+    width: 320px;   
+    margin: 10% auto;
+
+}
