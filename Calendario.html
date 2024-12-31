@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Actividades Empresariales</title>
+    <link rel="stylesheet" href="Calendario.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <h1 id="calendar-title"></h1>
+        <div id="calendar-controls">
+            <button onclick="previousMonth()">← Mes Anterior</button>
+            <button onclick="nextMonth()">Mes Siguiente →</button>
+        </div>
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mié</th>
+                    <th>Jue</th>
+                    <th>Vie</th>
+                    <th>Sáb</th>
+                    <th>Dom</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+
+        <div class="activity-manager">
+            <h2>Gestionar Actividades</h2>
+            <div id="activity-info">
+                <p><strong>Día seleccionado:</strong> <span id="selected-date">Ninguno</span></p>
+            </div>
+            <textarea id="activity-input" rows="3" placeholder="Escribe la actividad aquí..."></textarea>
+            <div class="buttons">
+                <button class="save" onclick="saveActivity()">Guardar Actividad</button>
+                <button class="delete" onclick="deleteActivity()">Eliminar Actividad</button>
+            </div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>
